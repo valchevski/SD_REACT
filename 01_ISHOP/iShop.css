@@ -1,0 +1,59 @@
+.IShopName {
+  font-size: 24px;
+  text-align: center;
+  background: darkslategray;
+  height: 50px;
+  width: 100%;
+  color: beige;
+  line-height: 50px;
+  position: fixed;
+  z-index: 999;
+  top: 0px;
+  left: 0px;
+}
+.IShopItems {
+  margin-top: 60px;
+}
+
+.IShopItemInfo {
+  position: relative;
+  flex: 1;
+}
+
+.IShopItem {
+  display: flex;
+  border: rgba(47, 79, 79, 0.9);
+  padding: 20px;
+  border-bottom-style: solid;
+}
+
+.IShopItem > div {
+  flex: 1;
+  padding: 1em;
+  color: darkslategray;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.IShopItemName {
+  font-weight: bold;
+  font-size: 20px;
+  width: fit-content;
+  padding: 10px;
+  color: beige;
+  background-color: rgba(47, 79, 79, 0.9);
+  height: 20px;
+  line-height: 20px;
+  border-radius: 12px;
+}
+
+.IShopItemPrice {
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+body {
+  width: 100%;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}

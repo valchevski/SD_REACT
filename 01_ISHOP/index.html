@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>iShop</title>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="iShop.js"></script>
+    <link rel="stylesheet" type="text/css" href="iShop.css" />
+
+    <script>
+
+        var shopName = 'Mobile Phones Online Store';
+        var itemsArr = [
+            { brand: 'Xiaomi', model: 'Redmi Note 8 Pro 6GB/64GB', price: 1190, photo: 'https://content2.onliner.by/catalog/device/header/e16c6a794798c03985a53861f42a1da9.jpeg', count: 67 },
+            { brand: 'Samsung', model: 'Galaxy A50 4GB/64GB (белый)', price: 548, photo: 'https://content2.onliner.by/catalog/device/header/c93a1df6be27222912d27530201d7d7a.jpeg', count: 24 },
+            { brand: 'Huawei', model: 'P30 Lite MAR-LX1M Dual SIM 4GB/128GB', price: 530, photo: 'https://content2.onliner.by/catalog/device/header/d882b98a1b406734271f81fc9508934e.jpeg', count: 54 },
+            { brand: 'Apple', model: 'iPhone 11 64GB (черный)', price: 2099, photo: 'https://content2.onliner.by/catalog/device/header/e2189f90f9088975c553ec33431fc186.jpeg', count: 98 },
+            { brand: 'OnePlus', model: '7 Pro 8GB/256GB (синий)', price: 1580, photo: 'https://content2.onliner.by/catalog/device/header/72fe584b86221112efc8dda98544811c.jpeg', count: 136 },
+            { brand: 'Sony', model: 'Xperia 1 6GB/128GB (черный)', price: 1920, photo: 'https://content2.onliner.by/catalog/device/header/3d625577603addcb6faf93cd34cb2d5a.jpeg', count: 0 },
+            { brand: 'Google', model: 'Pixel 3a (черный)', price: 1150, photo: 'https://content2.onliner.by/catalog/device/header/ec083be299f99ccdbcbb47c6ba6a51bc.jpeg', count: 21 },
+        ];
+
+        ReactDOM.render(
+            React.createElement(IShop, { shopName: shopName, items: itemsArr }),
+            document.getElementById('container')
+        );
+
+    </script>
+
+</body>
+
+</html>
